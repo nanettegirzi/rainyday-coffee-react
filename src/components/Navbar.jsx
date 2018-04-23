@@ -1,11 +1,10 @@
 import React from 'react';
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
 
-function Header(){
+
+function Navbar(){
   return (
-    <div>
-      <h1>Rainy Day Coffee Roasters</h1>
-    </div>
+  
   );
 }
 
