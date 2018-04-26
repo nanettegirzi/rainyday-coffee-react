@@ -32,6 +32,7 @@ function Header(){
 var navStyles = {
   display: 'grid',
   width: '100%',
+  position: 'fixed',
   gridTemplateColumns: '10fr 1fr 1fr',
   textAlign: 'left',
   lineHeight: '50px',
