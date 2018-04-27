@@ -1,4 +1,6 @@
 import React from 'react';
+import ConfirmationQuestions from './ConfirmationQuestions';
+import NewCoffeeForm from './NewCoffeeForm';
 
 class NewCoffeeControl extends React.Component {
 
@@ -7,20 +9,26 @@ class NewCoffeeControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    this.handleClick=this.handleClick.bind(this);
+    // this.handleClick=this.handleClick.bind(this);
   }
 
-  handleClick() {
-    this.setState({formVisibleonPage: true});
-    console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
-  }
+  // handleClick() {
+  //   this.setState({formVisibleonPage: true});
+  //   console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
+  // }
 
   render(){
+    let currentlyVisibleContent = null;
+    if (this.state.formVisibleOnPage){
+      currentlyVisibleContent = <NewCoffeeForm />;
+    } else {
+      currentlyVisibleContent = <ConfirmationQuestions />;
+    }
     return (
       <div>
-        <p>This is the NewCoffeeComponent</p>
-        <strong onClick={this.handleClick}>Click me to change my state</strong>
+        {currentlyVisibleContent}
       </div>
+
     );
   }
 }

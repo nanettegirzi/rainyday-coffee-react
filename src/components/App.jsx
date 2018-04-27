@@ -12,10 +12,9 @@ function App(){
   return (
     <div>
       <style global jsx>{`
-          body{
+          html,body{
             margin: 0px;
-            padding: 0px;
-            height: 100%
+            height: 100%;
           }
         `}</style>
       <Header/>

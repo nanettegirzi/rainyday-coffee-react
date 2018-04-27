@@ -29,7 +29,8 @@ function CoffeeList(){
       <h1>Browse Products</h1>
       <hr/>
       {masterCoffeeList.map((coffee, index) =>
-        <Coffee name={coffee.name}
+        <Coffee
+          name={coffee.name}
           price={coffee.price}
           key={index}/>
       )}

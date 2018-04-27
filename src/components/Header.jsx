@@ -11,10 +11,10 @@ function Header(){
             text-decoration: none;
             color: darkgray;
           }
-
         `}</style>
       <div id='navbar' style={navStyles}>
         <Link to="/">Rainy Day Coffee Roasters</Link>
+        <p></p>
         <Link to="/coffee">Coffee</Link>
         <Link to="/newcoffee">Add Coffee</Link>
       </div>
@@ -33,13 +33,13 @@ var navStyles = {
   display: 'grid',
   width: '100%',
   position: 'fixed',
-  gridTemplateColumns: '10fr 1fr 1fr',
-  textAlign: 'left',
+  gridTemplateColumns: '2fr 8fr 1fr 1fr',
+  textAlign: 'center',
   lineHeight: '50px',
-  padding: '15',
+  padding: '5',
   backgroundColor: 'whitesmoke',
   color: 'dimgray',
-  fontSize: '1.5rem'
+  fontSize: '20px'
 }
 
 var HeaderStyles = {
@@ -48,10 +48,9 @@ var HeaderStyles = {
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   textAlign: 'center',
-  padding: '590',
+  padding: '300',
   color: 'white',
-  fontSize: '20px'
-
+  fontSize: '20px',
 
 }
 
