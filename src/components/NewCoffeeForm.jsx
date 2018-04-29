@@ -3,6 +3,7 @@ import React from 'react';
 function NewCoffeeForm() {
   return (
     <div>
+      <br></br>
       <form>
       <input
         type='text'
@@ -12,7 +13,7 @@ function NewCoffeeForm() {
         type='text'
         id='price'
         placeholder='Price'/>
-      <button type='submit'Add Coffee></button>
+      <button type='submit'>Add New Coffee</button>
       </form>
     </div>
   );

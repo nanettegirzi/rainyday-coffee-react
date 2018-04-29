@@ -9,20 +9,19 @@ class NewCoffeeControl extends React.Component {
     this.state = {
       formVisibleOnPage: false
     };
-    // this.handleClick=this.handleClick.bind(this);
+    this.handleConfirmation=this.handleConfirmation.bind(this);
   }
 
-  // handleClick() {
-  //   this.setState({formVisibleonPage: true});
-  //   console.log('formVisibleOnPage is currently set to:' + this.state.formVisibleOnPage);
-  // }
+  handleConfirmation() {
+    this.setState({formVisibleOnPage: true});
+  }
 
   render(){
     let currentlyVisibleContent = null;
     if (this.state.formVisibleOnPage){
       currentlyVisibleContent = <NewCoffeeForm />;
     } else {
-      currentlyVisibleContent = <ConfirmationQuestions />;
+      currentlyVisibleContent = <ConfirmationQuestions onConfirmation={this.handleConfirmation}/>;
     }
     return (
       <div>
