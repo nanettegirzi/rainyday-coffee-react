@@ -1,34 +1,13 @@
 import React from 'react';
 import Coffee from './Coffee';
+import PropTypes from 'prop-types';
 
-var masterCoffeeList = [
-  {
-    name: "Night Cap",
-    price: "$13.50"
-  },
-  {
-    name: "Ethiopia Gotiti",
-    price: "$15.80"
-  },
-  {
-    name: "Colombia Narino Inga",
-    price: "$13.90"
-  },
-  {
-    name: "Kenya Kiunyu AA",
-    price: "$17.30"
-  },
-];
-
-
-
-
-function CoffeeList(){
+function CoffeeList(props){
   return (
     <div>
       <h1>Browse Products</h1>
       <hr/>
-      {masterCoffeeList.map((coffee, index) =>
+      {props.coffeeList.map((coffee, index) =>
         <Coffee
           name={coffee.name}
           price={coffee.price}
@@ -37,5 +16,9 @@ function CoffeeList(){
     </div>
   );
 }
+
+CoffeeList.propTypes = {
+  coffeeList: PropTypes.array
+};
 
 export default CoffeeList;
