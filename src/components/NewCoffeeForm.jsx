@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { v4 } from 'uuid';
 
 function NewCoffeeForm(props) {
   let _name = null;
@@ -7,7 +8,7 @@ function NewCoffeeForm(props) {
 
   function handleNewCoffeeFormSubmission(event) {
     event.preventDefault();
-    props.onNewCoffeeCreation({name: _name.value, price: _price.value});
+    props.onNewCoffeeCreation({name: _name.value, price: _price.value, id: v4()});
     _name.value = '';
     _price.value = '';
   }
