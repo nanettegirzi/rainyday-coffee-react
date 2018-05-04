@@ -8,7 +8,7 @@ This webpage is a rebuild of an Angular Project for a coffee roasting store and 
 
 ## Project Layout
 
-![Component Tree](src/assets/img/RainyDayCoffee Component Tree.png)
+![alt text](src/assets/img/RainyDayCoffee Component Tree.png)
 
 ## Setup
 1. Clone this repository
@@ -17,7 +17,7 @@ This webpage is a rebuild of an Angular Project for a coffee roasting store and 
 4. navigate to http://localhost:8080/
 
 ## Known Bugs
-None at this time
+Projecg layout shows image when doing a Readme preview, but not when committed to github
 
 ## Specifications
 1. User can add coffee to the coffee list
